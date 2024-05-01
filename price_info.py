@@ -23,7 +23,7 @@ def cost_of_fruits(fruit, quantity):
 
 
 def main():
-
+    
     cost_of_fruits('apple', 10)
     total_cost_shopping()
 
