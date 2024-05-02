@@ -32,19 +32,18 @@ def test_bubble_sort_invalid():
 def test_bubble_sort_more10():
     result = []
     input_arr = [64, 34, 25, 12, 22, 11, 90, 10, 9, 8, 7, 6, 5]
-    if(len(input_arr)>=10):
-        return 1
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
+    assert(result == 1)
     
 def test_bubble_sort_0():
     result = []
     input_arr = []
-    if (len(input_arr)==0):
-        return 0
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
+    assert(result==0)
+
     
 def test_bubble_sort_notint():
     result = []
     input_arr = ['a', 2, 3, 5, 1, 'b']
-
-    for x in input_arr:
-        if not isinstance (x,int):
-            return 2
+    result = Lab3.bubble_sort(input_arr, Lab3.SORT_ASCENDING)
+    assert(result==2)
